@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% load static %}
+<title>Digital india</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!--tab-->
+<style>
+div {
+  border: 0px solid #4CAF50;
+  padding: 0px;
+}
+
+.img1 {
+  float: left;
+}
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+<!--tab-->
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>Digital</b> India</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="{% url 'blog-index' %}" class="w3-bar-item w3-button">Govt Services</a>
+	  <a href="{% url 'about' %}" class="w3-bar-item w3-button">Education</a>
+	  <a href="#technology" class="w3-bar-item w3-button">Technology</a>
+	  <a href="#automobile" class="w3-bar-item w3-button">Automobiles</a>
+	  <a href="#apps" class="w3-bar-item w3-button">Apps & Games</a>
+	  <a href="#travel" class="w3-bar-item w3-button">Travel</a>
+	  <a href="#entertainment" class="w3-bar-item w3-button">Entertainment</a>
+	  <a href="#news" class="w3-bar-item w3-button">News</a>
+    </div>
+  </div>
+</div>
+
+
+<!--part1 start -->
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Categories</h3>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Technology</div>
+        <img src="img/tech.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Applications</div>
+        <img src="img/apps.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Education</div>
+        <img src="img/education.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Digital Services</div>
+        <img src="img/services.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Gadgets</div>
+        <img src="img/gadgets.jpg" alt="House" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Travel</div>
+        <img src="img/travel.jpg" alt="House" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Entertainment</div>
+        <img src="img/entertainment.jpg" alt="House" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Shopping</div>
+        <img src="img/ecom.jpg" alt="House" style="width:99%">
+      </div>
+    </div>
+  </div>
+<!--part1 end -->
+<hr>
+
+<!--part3-->
+<!--tab-->
+<div class="w3-container w3-white w3-card">
+<div class="w3-bar w3-border">
+<img class="img1" src="img/38873.jpg" style="width:180px; alt="Pineapple">
+  <button class="w3-bar-item w3-button" onclick="openCity('London')">London</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Paris</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Tokyo</button>
+</div>
+
+<div id="London" class="w3-container city">
+	<div class="w3-row">
+		<div class="w3-half w3-container w3-white">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+					<p><img class="img1" src="img/gadgets.jpg.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+					<span class="w3-large">Mike</span><br>
+					<span>Web Designer</span>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+		<div class="w3-half w3-container">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+						<p><img class="img1" src="img/travel.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+						<span class="w3-large">Mike</span><br>
+						<span>Web Designer</span>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="w3-row">
+		<div class="w3-half w3-container w3-white">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+					<p><img class="img1" src="img/education.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+					<span class="w3-large">Mike</span><br>
+					<span>Web Designer</span>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+		<div class="w3-half w3-container">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+						<p><img class="img1" src="img/ecom.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+						<span class="w3-large">Mike</span><br>
+						<span>Web Designer</span>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="Paris" class="w3-container city" style="display:none">
+  <div class="w3-row">
+		<div class="w3-half w3-container w3-white">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+					<p><img class="img1" src="img/apps.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+					<span class="w3-large">Mike</span><br>
+					<span>Web Designer</span>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+		<div class="w3-half w3-container">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+						<p><img class="img1" src="img/entertainment.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+						<span class="w3-large">Mike</span><br>
+						<span>Web Designer</span>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="w3-row">
+		<div class="w3-half w3-container w3-white">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+					<p><img class="img1" src="img/gadgets.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+					<span class="w3-large">Mike</span><br>
+					<span>Web Designer</span>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+		<div class="w3-half w3-container">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+						<p><img class="img1" src="img/travel.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+						<span class="w3-large">Mike</span><br>
+						<span>Web Designer</span>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="Tokyo" class="w3-container city" style="display:none">
+  <div class="w3-row">
+		<div class="w3-half w3-container w3-white">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+					<p><img class="img1" src="img/ecom.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+					<span class="w3-large">Mike</span><br>
+					<span>Web Designer</span>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+		<div class="w3-half w3-container">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+						<p><img class="img1" src="img/tech.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+						<span class="w3-large">Mike</span><br>
+						<span>Web Designer</span>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="w3-row">
+		<div class="w3-half w3-container w3-white">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+					<p><img class="img1" src="img/education.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+					<span class="w3-large">Mike</span><br>
+					<span>Web Designer</span>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+		<div class="w3-half w3-container">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+						<p><img class="img1" src="img_snowtops.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+						<span class="w3-large">Mike</span><br>
+						<span>Web Designer</span>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<br>
+</div>
+<br>
+<!--part3 end-->
+
+
+<hr>
+
+
+<!--tabs part4-->
+<!--tab-->
+<div class="w3-container w3-white w3-card">
+<div class="w3-bar w3-border">
+<img class="img1" src="img/38873.jpg" style="width:180px; alt="Pineapple">
+  <button class="w3-bar-item w3-button" onclick="openCity1('London1')">London</button>
+  <button class="w3-bar-item w3-button" onclick="openCity1('Paris1')">Paris</button>
+  <button class="w3-bar-item w3-button" onclick="openCity1('Tokyo1')">Tokyo</button>
+</div>
+
+<div id="London1" class="w3-container city1">
+	<div class="w3-row">
+		<div class="w3-half w3-container w3-white">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+					<p><img class="img1" src="img/gadgets.jpg.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+					<span class="w3-large">Mike</span><br>
+					<span>Web Designer</span>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+		<div class="w3-half w3-container">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+						<p><img class="img1" src="img/travel.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+						<span class="w3-large">Mike</span><br>
+						<span>Web Designer</span>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="w3-row">
+		<div class="w3-half w3-container w3-white">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+					<p><img class="img1" src="img/education.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+					<span class="w3-large">Mike</span><br>
+					<span>Web Designer</span>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+		<div class="w3-half w3-container">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+						<p><img class="img1" src="img/ecom.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+						<span class="w3-large">Mike</span><br>
+						<span>Web Designer</span>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="Paris1" class="w3-container city1" style="display:none">
+  <div class="w3-row">
+		<div class="w3-half w3-container w3-white">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+					<p><img class="img1" src="img/apps.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+					<span class="w3-large">Mike</span><br>
+					<span>Web Designer</span>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+		<div class="w3-half w3-container">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+						<p><img class="img1" src="img/entertainment.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+						<span class="w3-large">Mike</span><br>
+						<span>Web Designer</span>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="w3-row">
+		<div class="w3-half w3-container w3-white">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+					<p><img class="img1" src="img/gadgets.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+					<span class="w3-large">Mike</span><br>
+					<span>Web Designer</span>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+		<div class="w3-half w3-container">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+						<p><img class="img1" src="img/travel.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+						<span class="w3-large">Mike</span><br>
+						<span>Web Designer</span>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="Tokyo1" class="w3-container city1" style="display:none">
+  <div class="w3-row">
+		<div class="w3-half w3-container w3-white">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+					<p><img class="img1" src="img/ecom.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+					<span class="w3-large">Mike</span><br>
+					<span>Web Designer</span>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+		<div class="w3-half w3-container">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+						<p><img class="img1" src="img/tech.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+						<span class="w3-large">Mike</span><br>
+						<span>Web Designer</span>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="w3-row">
+		<div class="w3-half w3-container w3-white">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+					<p><img class="img1" src="img/education.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+					<span class="w3-large">Mike</span><br>
+					<span>Web Designer</span>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+		<div class="w3-half w3-container">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+						<p><img class="img1" src="img_snowtops.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+						<span class="w3-large">Mike</span><br>
+						<span>Web Designer</span>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<br>
+</div>
+<br>
+<!--tabs part4 end-->
+
+
+<!--part2 start -->
+<!--slideshow -->
+
+<!--1st-->
+<div class="w3-container mySlides w3-margin w3-animate-right">
+	<div class="w3-row">
+
+		<div class="w3-col w3-container" style="width:20%">
+			<div class="w3-card" style="width:100%">
+				<div class="w3-display-container w3-text-white">
+					<img src="img/img1.jpg" alt="Person" style="width:100%">
+					<div class="w3-large w3-display-bottommiddle">
+						<p>The boss of all bosses</p>
+						
+					</div>
+					<button class="w3-display-topleft w3-margin w3-btn w3-teal w3-wide w3-button w3-teal w3-round">Wide</button>
+				</div>	
+			</div>
+		</div>
+  
+		<div class="w3-col w3-container" style="width:20%">
+			<div class="w3-card" style="width:100%">
+				<div class="w3-display-container w3-text-white">
+					<img src="img/img2.jpg" alt="Person" style="width:100%">
+					<div class="w3-large w3-display-bottommiddle">
+						<p>The boss of all bosses</p>
+						
+					</div>
+					<button class="w3-display-topleft w3-margin w3-btn w3-teal w3-wide w3-button w3-teal w3-round">Wide</button>
+				</div>	
+			</div>
+		</div>
+  
+		<div class="w3-col w3-container" style="width:20%">
+			<div class="w3-card" style="width:100%">
+				<div class="w3-display-container w3-text-white">
+					<img src="img/img3.jpg" alt="Person" style="width:100%">
+					<div class="w3-large w3-display-bottommiddle">
+						<p>The boss of all bosses</p>
+						
+					</div>
+					<button class="w3-display-topleft w3-margin w3-btn w3-teal w3-wide w3-button w3-teal w3-round">Wide</button>
+				</div>	
+			</div>
+		</div>
+  
+		<div class="w3-col w3-container" style="width:20%">
+			<div class="w3-card" style="width:100%">
+				<div class="w3-display-container w3-text-white">
+					<img src="img/img4.jpg" alt="Person" style="width:100%">
+					<div class="w3-large w3-display-bottommiddle">
+						<p>The boss of all bosses</p>
+						
+					</div>
+					<button class="w3-display-topleft w3-margin w3-btn w3-teal w3-wide w3-button w3-teal w3-round">Wide</button>
+				</div>	
+			</div>
+		</div>
+  
+		<div class="w3-col w3-container" style="width:20%">
+			<div class="w3-card" style="width:100%">
+				<div class="w3-display-container w3-text-white">
+					<img src="img/img5.jpg" alt="Person" style="width:100%">
+					<div class="w3-large w3-display-bottommiddle">
+						<p>The boss of all bosses</p>
+						
+					</div>
+					<button class="w3-display-topleft w3-margin w3-btn w3-teal w3-wide w3-button w3-teal w3-round">Wide</button>
+				</div>	
+			</div>
+		</div>
+	</div>
+<br>
+</div>
+<!--1st end-->
+
+
+<!--2st-->
+<div class="w3-container mySlides w3-margin w3-animate-right">
+	<div class="w3-row">
+
+		<div class="w3-col w3-container" style="width:20%">
+			<div class="w3-card" style="width:100%">
+				<div class="w3-display-container w3-text-white">
+					<img src="img/img6.jpg" alt="Person" style="width:100%">
+					<div class="w3-large w3-display-bottommiddle">
+						<p>The boss of all bosses</p>
+						
+					</div>
+					<button class="w3-display-topleft w3-margin w3-btn w3-teal w3-wide w3-button w3-teal w3-round">Wide</button>
+				</div>	
+			</div>
+		</div>
+  
+		<div class="w3-col w3-container" style="width:20%">
+			<div class="w3-card" style="width:100%">
+				<div class="w3-display-container w3-text-white">
+					<img src="img/img7.jpg" alt="Person" style="width:100%">
+					<div class="w3-large w3-display-bottommiddle">
+						<p>The boss of all bosses</p>
+						
+					</div>
+					<button class="w3-display-topleft w3-margin w3-btn w3-teal w3-wide w3-button w3-teal w3-round">Wide</button>
+				</div>	
+			</div>
+		</div>
+  
+		<div class="w3-col w3-container" style="width:20%">
+			<div class="w3-card" style="width:100%">
+				<div class="w3-display-container w3-text-white">
+					<img src="img/img8.jpg" alt="Person" style="width:100%">
+					<div class="w3-large w3-display-bottommiddle">
+						<p>The boss of all bosses</p>
+						
+					</div>
+					<button class="w3-display-topleft w3-margin w3-btn w3-teal w3-wide w3-button w3-teal w3-round">Wide</button>
+				</div>	
+			</div>
+		</div>
+  
+		<div class="w3-col w3-container" style="width:20%">
+			<div class="w3-card" style="width:100%">
+				<div class="w3-display-container w3-text-white">
+					<img src="img/img9.jpg" alt="Person" style="width:100%">
+					<div class="w3-large w3-display-bottommiddle">
+						<p>The boss of all bosses</p>
+						
+					</div>
+					<button class="w3-display-topleft w3-margin w3-btn w3-teal w3-wide w3-button w3-teal w3-round">Wide</button>
+				</div>	
+			</div>
+		</div>
+		
+		<div class="w3-col w3-container" style="width:20%">
+			<div class="w3-card" style="width:100%">
+				<div class="w3-display-container w3-text-white">
+					<img src="img/img10.jpg" alt="Person" style="width:100%">
+					<div class="w3-large w3-display-bottommiddle">
+						<p>The boss of all bosses</p>
+						
+					</div>
+					<button class="w3-display-topleft w3-margin w3-btn w3-teal w3-wide w3-button w3-teal w3-round">Wide</button>
+				</div>	
+			</div>
+		</div>
+
+	</div>
+<br>
+</div>
+<!--2st end-->
+
+<!--3rd-->
+<div class="w3-container mySlides w3-margin w3-animate-right">
+	<div class="w3-row">
+
+		<div class="w3-col w3-container" style="width:20%">
+			<div class="w3-card" style="width:100%">
+				<div class="w3-display-container w3-text-white">
+					<img src="img/img1.jpg" alt="Person" style="width:100%">
+					<div class="w3-large w3-display-bottommiddle">
+						<p>The boss of all bosses</p>
+						
+					</div>
+					<button class="w3-display-topleft w3-margin w3-btn w3-teal w3-wide w3-button w3-teal w3-round">Wide</button>
+				</div>	
+			</div>
+		</div>
+  
+		<div class="w3-col w3-container" style="width:20%">
+			<div class="w3-card" style="width:100%">
+				<div class="w3-display-container w3-text-white">
+					<img src="img/img2.jpg" alt="Person" style="width:100%">
+					<div class="w3-large w3-display-bottommiddle">
+						<p>The boss of all bosses</p>
+						
+					</div>
+					<button class="w3-display-topleft w3-margin w3-btn w3-teal w3-wide w3-button w3-teal w3-round">Wide</button>
+				</div>	
+			</div>
+		</div>
+  
+		<div class="w3-col w3-container" style="width:20%">
+			<div class="w3-card" style="width:100%">
+				<div class="w3-display-container w3-text-white">
+					<img src="img/img3.jpg" alt="Person" style="width:100%">
+					<div class="w3-large w3-display-bottommiddle">
+						<p>The boss of all bosses</p>
+						
+					</div>
+					<button class="w3-display-topleft w3-margin w3-btn w3-teal w3-wide w3-button w3-teal w3-round">Wide</button>
+				</div>	
+			</div>
+		</div>
+		
+		<div class="w3-col w3-container" style="width:20%">
+			<div class="w3-card" style="width:100%">
+				<div class="w3-display-container w3-text-white">
+					<img src="img/img4.jpg" alt="Person" style="width:100%">
+					<div class="w3-large w3-display-bottommiddle">
+						<p>The boss of all bosses</p>
+						
+					</div>
+					<button class="w3-display-topleft w3-margin w3-btn w3-teal w3-wide w3-button w3-teal w3-round">Wide</button>
+				</div>	
+			</div>
+		</div>
+		
+		<div class="w3-col w3-container" style="width:20%">
+			<div class="w3-card" style="width:100%">
+				<div class="w3-display-container w3-text-white">
+					<img src="img/img5.jpg" alt="Person" style="width:100%">
+					<div class="w3-large w3-display-bottommiddle">
+						<p>The boss of all bosses</p>
+						
+					</div>
+					<button class="w3-display-topleft w3-margin w3-btn w3-teal w3-wide w3-button w3-teal w3-round">Wide</button>
+				</div>	
+			</div>
+		</div>
+  
+		
+
+	</div>
+<br>
+</div>
+<!--3rd end-->
+
+
+<!--part2 end -->
+
+
+<!--tabs 4-->
+<!--tab-->
+<div class="w3-container w3-white w3-card">
+<div class="w3-bar w3-border">
+<img class="img1" src="img/38873.jpg" style="width:180px; alt="Pineapple">
+  <button class="w3-bar-item w3-button" onclick="opentab3('London3')">London</button>
+  <button class="w3-bar-item w3-button" onclick="opentab3('Paris3')">Paris</button>
+  <button class="w3-bar-item w3-button" onclick="opentab3('Tokyo3')">Tokyo</button>
+</div>
+
+<div id="London3" class="w3-container tab3">
+	<div class="w3-row">
+		<div class="w3-half w3-container w3-white">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+					<p><img class="img1" src="img/gadgets.jpg.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+					<span class="w3-large">Mike</span><br>
+					<span>Web Designer</span>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+		<div class="w3-half w3-container">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+						<p><img class="img1" src="img/travel.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+						<span class="w3-large">Mike</span><br>
+						<span>Web Designer</span>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="w3-row">
+		<div class="w3-half w3-container w3-white">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+					<p><img class="img1" src="img/education.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+					<span class="w3-large">Mike</span><br>
+					<span>Web Designer</span>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+		<div class="w3-half w3-container">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+						<p><img class="img1" src="img/ecom.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+						<span class="w3-large">Mike</span><br>
+						<span>Web Designer</span>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="Paris3" class="w3-container tab3" style="display:none">
+  <div class="w3-row">
+		<div class="w3-half w3-container w3-white">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+					<p><img class="img1" src="img/apps.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+					<span class="w3-large">Mike</span><br>
+					<span>Web Designer</span>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+		<div class="w3-half w3-container">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+						<p><img class="img1" src="img/entertainment.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+						<span class="w3-large">Mike</span><br>
+						<span>Web Designer</span>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="w3-row">
+		<div class="w3-half w3-container w3-white">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+					<p><img class="img1" src="img/gadgets.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+					<span class="w3-large">Mike</span><br>
+					<span>Web Designer</span>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+		<div class="w3-half w3-container">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+						<p><img class="img1" src="img/travel.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+						<span class="w3-large">Mike</span><br>
+						<span>Web Designer</span>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="Tokyo3" class="w3-container tab3" style="display:none">
+  <div class="w3-row">
+		<div class="w3-half w3-container w3-white">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+					<p><img class="img1" src="img/ecom.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+					<span class="w3-large">Mike</span><br>
+					<span>Web Designer</span>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+		<div class="w3-half w3-container">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+						<p><img class="img1" src="img/tech.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+						<span class="w3-large">Mike</span><br>
+						<span>Web Designer</span>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="w3-row">
+		<div class="w3-half w3-container w3-white">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+					<p><img class="img1" src="img/education.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+					<span class="w3-large">Mike</span><br>
+					<span>Web Designer</span>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+		<div class="w3-half w3-container">
+			<div class="w3-panel w3-card">
+				<div class="clearfix">
+						<p><img class="img1" src="img_snowtops.jpg" alt="Pineapple" style="width:170px;height:170px;margin-right:15px;">
+						<span class="w3-large">Mike</span><br>
+						<span>Web Designer</span>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<br>
+</div>
+<br>
+<!--tab 4 end-->
+
+
+
+<!--slide show script-->
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+
+<!--tab-->
+
+<script>
+function openCity(cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(cityName).style.display = "block";  
+}
+</script>
+
+
+<script>
+function openCity1(cityName) {
+  var i;
+  var x = document.getElementsByClassName("city1");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(cityName).style.display = "block";  
+}
+</script>
+
+
+<script>
+function opentab3(cityName) {
+  var i;
+  var x = document.getElementsByClassName("tab3");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(cityName).style.display = "block";  
+}
+</script>
+<!--tab-->
+
+</body>
+</html>
